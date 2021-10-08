@@ -1,0 +1,9 @@
+This example demonstrates the functionality of using the camera for video recording.
+
+Video Capture:
+Records a video and plays it back after recording stops.
+
+<color=#dbfb76><b>Privileges</b></color>
+- AudioCaptureMic
+- CameraCapture
+- ControllerPose

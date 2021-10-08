@@ -1,0 +1,21 @@
+{
+    "displayName": "Magic Leap SDK", 
+    "name": "com.magicleap.unitysdk", 
+    "author": {
+        "url": "https://developer.magicleap.com/", 
+        "name": "Magic Leap"
+    }, 
+    "unity": "2020.2", 
+    "version": "0.26.0", 
+    "dependencies": {
+        "com.unity.xr.magicleap": "6.2.2"
+    }, 
+    "keywords": [
+        "magicleap", 
+        "ar", 
+        "augmented", 
+        "xr", 
+        "reality"
+    ], 
+    "description": "Magic Leap Unity SDK"
+}

@@ -1,0 +1,4 @@
+<color=#dbfb76><b>Bumper</b></color>
+- First Press: Start video recording
+- Second Press: Stop video recording and playback saved video.
+- Repeat
