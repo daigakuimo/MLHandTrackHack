@@ -12,7 +12,7 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
+  companyName: Daigakuimo
   productName: MLHandTrackHack
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
@@ -128,7 +128,9 @@ PlayerSettings:
     16:9: 1
     Others: 1
   bundleVersion: 0.1
-  preloadedAssets: []
+  preloadedAssets:
+  - {fileID: 11400000, guid: 058efbcc935404b518d80a624ec3a1e0, type: 2}
+  - {fileID: -4748963808890327079, guid: 4b46e9b794bf1457791511897e6902da, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -673,7 +675,7 @@ PlayerSettings:
     m_ModelFolderPath: 
     m_PortalFolderPath: 
   luminCert:
-    m_CertPath: /Users/yuto/MagicLeap/privatekey/hyasssy.cert
+    m_CertPath: C:/Users/chara/MagicLeap/key/caai.cert
     m_SignPackage: 1
   luminIsChannelApp: 0
   luminVersion:

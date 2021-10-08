@@ -5,9 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: Assets/App/NewFingers/Example/ExNewFingers.unity
+    guid: a4fd1dc61ae899a4cab23112c01ae66b
   - enabled: 1
-    path: Assets/MagicLeap/Examples/Beginner/Scenes/HelloWorld.unity
-    guid: bb62d4c1f57c2464c91843ac2fcd932f
+    path: Assets/App/RevolveIcons/Example/ExRevolveIcons.unity
+    guid: b69ca2231edbb354db4f1850652da0e5
   m_configObjects:
     com.unity.xr.magicleap.magic_leap_settings: {fileID: 11400000, guid: 058efbcc935404b518d80a624ec3a1e0, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 4b46e9b794bf1457791511897e6902da, type: 2}

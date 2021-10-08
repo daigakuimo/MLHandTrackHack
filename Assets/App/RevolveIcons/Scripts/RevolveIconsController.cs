@@ -5,6 +5,7 @@ using UniRx;
 using UnityEngine;
 using DG.Tweening;
 using UniRx.Triggers;
+using UnityEngine.Events;
 
 namespace MLHandTrackHack.RevolveIcons
 {
@@ -19,10 +20,13 @@ namespace MLHandTrackHack.RevolveIcons
     // 補間の強さ（0f～1f） 。0なら追従しない。1なら遅れなしに追従する。
     [SerializeField, Range(0f, 1f)] private float followStrength;
     
+    [SerializeField] private UnityEvent onAppearEvents;
+    [SerializeField] private UnityEvent onRoleEvents;
+    [SerializeField] private UnityEvent onFistEvents;
+    
     private Transform _cameraTransform;
 
     private bool _isRotate;
-    private bool _isMove;
 
     private int _rollNum = 0;
     private Quaternion _defaultHandQuaternion;     // Cジェスチャー時の回転前の手のクォータニオン
@@ -40,7 +44,6 @@ namespace MLHandTrackHack.RevolveIcons
     public void Initialization()
     {
         _isRotate = false;
-        _isMove = false;
         _defaultHandQuaternion = HandTransformManager.HandQuaternion(useHand);
         _lastHandQuaternion = HandTransformManager.HandQuaternion(useHand);
         _revolveIconsCts = new CancellationTokenSource();
@@ -89,6 +92,7 @@ namespace MLHandTrackHack.RevolveIcons
             {
                 _onFistSubject.OnNext(Unit.Default);
                 iconAnimManager.OnFist();
+                onFistEvents?.Invoke();
                 DeleteRevolveIcons();
             })
             .AddTo(_compositeDisposable);
@@ -142,6 +146,7 @@ namespace MLHandTrackHack.RevolveIcons
 
             if (_rollNum > 0)
             {
+                onRoleEvents?.Invoke();
                 await iconRoot.transform.DORotate(new Vector3(0, -(360.0f / iconNum), 0), 0.1f, RotateMode.FastBeyond360).SetRelative(true).ToAwaiter();
                 iconAnimManager.OnRoleIcons();
                 _rollNum--;
@@ -207,36 +212,13 @@ namespace MLHandTrackHack.RevolveIcons
     /// </summary>
     public async UniTask AppearRevolveIcons()
     {
+        onAppearEvents?.Invoke();
+        
         transform.localScale = Vector3.zero;
 
         await transform.DOScale(_defaultScale, 0.7f).SetEase(Ease.InOutQuint).ToAwaiter();
         
         StandByPose();
-    }
-
-
-    /// <summary>
-    /// 体からキューブが出てきたときに呼ぶ
-    /// 手元についたら初期化
-    /// </summary>
-    /// <param name="handPosition"></param>
-    public async UniTask FirstMoveRevolveIcons(Vector3 handPosition)
-    {
-        iconRoot.SetActive(false);
-        float scale = 0.05f;
-        transform.localScale = new Vector3(scale, scale,scale);
-
-        var sequence = DOTween.Sequence();
-        sequence.Append(transform.DOScale(_defaultScale, 1.5f).SetEase(Ease.InQuint))
-            .Join(transform.DOMove(handPosition, 1.5f)
-            .SetEase(Ease.InQuint))
-            .OnComplete(() =>
-            { 
-                iconRoot.SetActive(true);
-                StandByPose();
-            });
-
-        sequence.Play();
     }
 
     /// <summary>

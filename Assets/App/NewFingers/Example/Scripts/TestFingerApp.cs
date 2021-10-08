@@ -1,12 +1,14 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class TestFingerApp : NewFingerApp
+namespace MLHandTrackHack.NewFingers
 {
-    public override void StartApp(NewFingerView.NewFingerType type)
+    public class TestFingerApp : NewFingerApp
     {
-        Debug.Log("start App : " + type);
+        [SerializeField] private Text resultText;
+        public override void StartApp(NewFingerView.NewFingerType type)
+        {
+            resultText.text = type.ToString();
+        }
     }
-    
 }

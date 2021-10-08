@@ -44,11 +44,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0781256d1eebd4814b224a0297157d8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnFistEvents:
+  onFistEvents:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 8314363361423374723}
-        m_TargetAssemblyTypeName: TestRevoleIconsEvent, Assembly-CSharp
+        m_TargetAssemblyTypeName: MLHandTrackHack.RevolveIcons.TestRevolveIconsEvent,
+          Assembly-CSharp
         m_MethodName: OnIconFist
         m_Mode: 3
         m_Arguments:
@@ -103,11 +104,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0781256d1eebd4814b224a0297157d8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnFistEvents:
+  onFistEvents:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 8314363361423374723}
-        m_TargetAssemblyTypeName: TestRevoleIconsEvent, Assembly-CSharp
+        m_TargetAssemblyTypeName: MLHandTrackHack.RevolveIcons.TestRevolveIconsEvent,
+          Assembly-CSharp
         m_MethodName: OnIconFist
         m_Mode: 3
         m_Arguments:
@@ -354,11 +356,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0781256d1eebd4814b224a0297157d8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnFistEvents:
+  onFistEvents:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 8314363361423374723}
-        m_TargetAssemblyTypeName: TestRevoleIconsEvent, Assembly-CSharp
+        m_TargetAssemblyTypeName: MLHandTrackHack.RevolveIcons.TestRevolveIconsEvent,
+          Assembly-CSharp
         m_MethodName: OnIconFist
         m_Mode: 3
         m_Arguments:
@@ -809,6 +812,15 @@ MonoBehaviour:
   iconNum: 5
   oneRoleIconNum: 3
   followStrength: 0.085
+  onAppearEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  onRoleEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  onFistEvents:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &3400219585045440743
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -963,11 +975,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0781256d1eebd4814b224a0297157d8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnFistEvents:
+  onFistEvents:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 8314363361423374723}
-        m_TargetAssemblyTypeName: TestRevoleIconsEvent, Assembly-CSharp
+        m_TargetAssemblyTypeName: MLHandTrackHack.RevolveIcons.TestRevolveIconsEvent,
+          Assembly-CSharp
         m_MethodName: OnIconFist
         m_Mode: 3
         m_Arguments:
@@ -1022,11 +1035,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0781256d1eebd4814b224a0297157d8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnFistEvents:
+  onFistEvents:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 8314363361423374723}
-        m_TargetAssemblyTypeName: TestRevoleIconsEvent, Assembly-CSharp
+        m_TargetAssemblyTypeName: MLHandTrackHack.RevolveIcons.TestRevolveIconsEvent,
+          Assembly-CSharp
         m_MethodName: OnIconFist
         m_Mode: 3
         m_Arguments:

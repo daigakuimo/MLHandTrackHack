@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cf5b356e131a944286fec26d7c40b4e, type: 3}
   m_Name: MagicLeapManifestSettings
   m_EditorClassIdentifier: 
-  m_MinimumAPILevel: 4
+  m_MinimumAPILevel: 7
   m_AllowBackgroundMusicService: 0
   m_PrivilegeGroups:
   - m_Name: Autogranted
@@ -54,13 +54,13 @@ MonoBehaviour:
       m_Enabled: 0
       m_Name: DrmCertificates
     - m_ApiLevel: 1
-      m_Enabled: 0
+      m_Enabled: 1
       m_Name: GesturesConfig
     - m_ApiLevel: 1
-      m_Enabled: 0
+      m_Enabled: 1
       m_Name: GesturesSubscribe
     - m_ApiLevel: 6
-      m_Enabled: 0
+      m_Enabled: 1
       m_Name: HandMesh
     - m_ApiLevel: 1
       m_Enabled: 0
@@ -75,7 +75,7 @@ MonoBehaviour:
       m_Enabled: 0
       m_Name: Internet
     - m_ApiLevel: 1
-      m_Enabled: 0
+      m_Enabled: 1
       m_Name: LowLatencyLightwear
     - m_ApiLevel: 1
       m_Enabled: 0

@@ -5,16 +5,19 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Serialization;
 
-public class FingerTipController : MonoBehaviour
+namespace MLHandTrackHack.NewFingers
 {
-    [SerializeField] private NewFingerApp newFingerApp;
-    public NewFingerView.NewFingerType type = NewFingerView.NewFingerType.Index;
-
-    private void OnTriggerEnter(Collider other)
+    public class FingerTipController : MonoBehaviour
     {
-        if (other.CompareTag("Thumb"))
+        [SerializeField] private NewFingerApp newFingerApp;
+        public NewFingerView.NewFingerType type = NewFingerView.NewFingerType.Index;
+
+        private void OnTriggerEnter(Collider other)
         {
-            newFingerApp.StartApp(type);
+            if (other.CompareTag("Thumb"))
+            {
+                newFingerApp.StartApp(type);
+            }
         }
     }
 }
