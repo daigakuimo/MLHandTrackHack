@@ -5,10 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/App/NewFingers/Example/ExNewFingers.unity
     guid: a4fd1dc61ae899a4cab23112c01ae66b
-  - enabled: 1
+  - enabled: 0
     path: Assets/App/RevolveIcons/Example/ExRevolveIcons.unity
     guid: b69ca2231edbb354db4f1850652da0e5
   m_configObjects:
