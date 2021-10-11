@@ -9,7 +9,7 @@ MLHandTrackHackはXR HMDにおける汎用UIの実験プロジェクトです。
 
 の2つのUIを開発しています。
 
-開発の経緯、UIの詳細な説明は本リポジトリの前進となったプロジェクト[「Character as an Interface」のサイト](https://hyasssy.tokyo/projects/caai/)
+開発の経緯、UIの詳細な説明は本リポジトリの前身となったプロジェクト[「Character as an Interface」のサイト](https://hyasssy.tokyo/projects/caai/)
 に記載しています。<br>
 
 
