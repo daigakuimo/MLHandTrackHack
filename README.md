@@ -43,8 +43,8 @@ MLHandTrackHackはXR HMDにおける汎用UIの実験プロジェクトです。
 
 
 ## Author
-- Ayato Enami
 - Yuto Hayashi
+- Ayato Enami
 - Mitibumi Ito
 
 ## License
