@@ -1,8 +1,6 @@
 /[Ll]ibrary/
 /[Tt]emp/
 /[Oo]bj/
-/[Bb]uild/
-/[Bb]uilds/
 /[Ll]ogs/
 /[Mm]emoryCaptures/
 /[Uu]ser[Ss]ettings/
@@ -63,7 +61,6 @@ crashlytics-build.properties
 
 # Unity Artifacts
 *.package
-*.mpk
 .out/
 
 .vsconfig
