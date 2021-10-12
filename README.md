@@ -45,6 +45,56 @@ MLHandTrackHackはXR HMDにおける汎用UIの実験プロジェクトです。
 
 4. UnityのプロジェクトでApp/RevolveIcons or NewFingers/ExampleフォルダにExampleシーンがあります。
 
+## Usage
+###Revolve Icons
+1. 設定したいイベントのアイコン画像を用意。<br>
+   
+2. `App/RevolveIcons/Prefabs/Icons/IconOrigin`プレハブの子要素`IconImage`にアイコン画像を設定。<br>
+   ![RI_usage_2](https://user-images.githubusercontent.com/36768869/136963295-6dae9b0f-478f-4618-9d49-87a639bc666c.png)
+
+
+3. `IconOrigin`プレハブにある`IconBehavior`コンポーネントの`OnFistEvent`にアイコンが選択された状態でFist(握る)ジェスチャした際のイベントを設定。<br>
+   ![RI_usage_3](https://user-images.githubusercontent.com/36768869/136963307-33def44d-2f2b-4ff5-bc6b-af65158699b6.png)
+
+
+4. `RevolveIcons`プレハブの子要素`IconsRoot`にある`CircleObjectCreator`コンポーネントの`Icons`に作ったアイコンをアタッチ。<br>
+   ![RI_usage_4](https://user-images.githubusercontent.com/36768869/136963322-754fe1d8-75ea-46f8-b241-7471df428e9d.png)
+
+
+5. 1~4までを作りたいアイコンの数繰り返す。<br>
+
+
+6. アイコンをすべてアタッチできたら、`IconsRoot`の`CircleObjectCreator`をアクティブにすると、アタッチしたアイコンが円形に配置される。円形に配置されたら`CircleObjectCreator`を非アクティブにしておく。<br>
+   ![RI_usage_6](https://user-images.githubusercontent.com/36768869/136963334-0aadafc5-a4e9-4e8f-a9aa-30ab5c5f5992.png)
+
+
+7. `RevolveIcons`の`RevolveIconsController`の`IconNum`に設定したアイコンの数を入力。<br>
+   ![RI_usage_7](https://user-images.githubusercontent.com/36768869/136963343-af5510db-a17b-4347-b0e3-08b5aa7b3aa5.png)
+
+
+8. シーン上のオブジェクトに`RevolveIconsCreator`コンポーネントを追加し、`RevolveIconsPrefab`に7までに作ったプレハブをアタッチ。<br>
+   ![RI_usage_8](https://user-images.githubusercontent.com/36768869/136963352-177dcb3b-9fd5-48fa-b769-b09741ad7317.png)
+
+
+9. ビルドまたはZero Iterationで確認。<br>
+
+
+
+### NewFingers
+
+1. `MLHandTrackHack.NewFingers.NewFingerApp`を継承したスクリプトを作成し、`StartApp`メソッドに指をくっつけた時の処理を記述。
+   ![NF_usage_1](https://user-images.githubusercontent.com/36768869/136974693-1de53b91-8dca-46f2-9e26-638e50859955.png)
+
+2. 1で作ったスクリプトを`App/NewFingers/Prefabs/NewFingers`プレハブに追加。
+   
+
+3. `App/NewFingers/Prefabs/NewFingers`プレハブの子要素`IndexObj`(人差し指)->`FingerTipController`->`NewFingerApp`に2で追加したスクリプトをアタッチ。
+   ![NF_usage_2](https://user-images.githubusercontent.com/36768869/136974708-e612cb74-eb47-42d8-9a14-3a16037cccb9.png)
+
+4. 1~3を他の指にも設定。<br>
+   
+
+5. ビルドまたはZero Iterationで確認。<br>
 
 
 ## Author
