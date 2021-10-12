@@ -1,3 +1,8 @@
+[![LICENSE](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE.md)
+[![Latest GitHub release](https://img.shields.io/github/v/release/bibinba/VRUIPartsCollection)]()
+![Unity](https://img.shields.io/badge/-Unity-000000.svg?logo=unity&style=popout)
+
+
 # MLHandTrackHack
 
 MLHandTrackHackはXR HMDにおける汎用UIの実験プロジェクトです。<br>
@@ -31,14 +36,14 @@ MLHandTrackHackはXR HMDにおける汎用UIの実験プロジェクトです。
     |  MagicLeap SDK       |  0.26   |
     |  XR Plugin Manager   |  4.0.1  |
 
-2. [最新のリリース](https://github.com/daigakuimo/MLHandTrackHack/releases)
+2. [Magic-Leap-Toolkit](https://github.com/magicleap/Magic-Leap-Toolkit-Unity/blob/master/package/MagicLeap-Tools.unitypackage)
+をダウンロードし、インポート。
+
+3. [最新のリリース](https://github.com/daigakuimo/MLHandTrackHack/releases)
 から[MLHandTrackHack.unitypackage](https://github.com/daigakuimo/MLHandTrackHack/releases/latest/download/MLHandTrackHack_v1.0.unitypackage)
-をダウンロード。
+をダウンロードし、インポート。
 
-
-## Usage
-
-
+4. UnityのプロジェクトでApp/RevolveIcons or NewFingers/ExampleフォルダにExampleシーンがあります。
 
 
 
