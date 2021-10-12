@@ -88,7 +88,7 @@ MLHandTrackHackはXR HMDにおける汎用UIの実験プロジェクトです。
 2. 1で作ったスクリプトを`App/NewFingers/Prefabs/NewFingers`プレハブに追加。
    
 
-3. `App/NewFingers/Prefabs/NewFingers`プレハブの子要素`IndexObj`(人差し指)->`FingerTipController`->`NewFingerApp`に2で追加したスクリプトをアタッチ。
+3. `App/NewFingers/Prefabs/NewFingers`プレハブの子要素`IndexObj`(人差し指)→`FingerTipController`→`NewFingerApp`に2で追加したスクリプトをアタッチ。
    ![NF_usage_2](https://user-images.githubusercontent.com/36768869/136974708-e612cb74-eb47-42d8-9a14-3a16037cccb9.png)
 
 4. 1~3を他の指にも設定。<br>
