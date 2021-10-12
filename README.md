@@ -53,7 +53,7 @@ MLHandTrackHackはXR HMDにおける汎用UIの実験プロジェクトです。
    ![RI_usage_2](https://user-images.githubusercontent.com/36768869/136963295-6dae9b0f-478f-4618-9d49-87a639bc666c.png)
 
 
-3. `IconOrigin`プレハブにある`IconBehavior`コンポーネントの`OnFistEvent`にアイコンが選択された状態でFist(握る)ジェスチャした際のイベントを設定。<br>
+3. `IconOrigin`プレハブにある`IconBehavior`コンポーネントの`OnFistEvents`にアイコンが選択された状態でFist(握る)ジェスチャした際のイベントを設定。<br>
    ![RI_usage_3](https://user-images.githubusercontent.com/36768869/136963307-33def44d-2f2b-4ff5-bc6b-af65158699b6.png)
 
 
