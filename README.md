@@ -46,7 +46,7 @@ MLHandTrackHackはXR HMDにおける汎用UIの実験プロジェクトです。
 4. UnityのプロジェクトでApp/RevolveIcons or NewFingers/ExampleフォルダにExampleシーンがあります。
 
 ## Usage
-###Revolve Icons
+### Revolve Icons
 1. 設定したいイベントのアイコン画像を用意。<br>
    
 2. `App/RevolveIcons/Prefabs/Icons/IconOrigin`プレハブの子要素`IconImage`にアイコン画像を設定。<br>
